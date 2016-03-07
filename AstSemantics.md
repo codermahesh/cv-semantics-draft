@@ -20,8 +20,24 @@ simply add attribute for data segments
  -- All intructions are vectorized in data i.e SIMD
 
 1.Types 
+### Integral Types
+	8, 16 , 32 bit Integer Registers with 2-Complement representation
+
+### Pixel Types
+	8, 16,  24 bit psuedo Registers with saturated/unsaturated math
+
+### Cast Conversions
+	I. Downcasts
+		-- Integral Downcasts  16_to_8, 32_to_16
+		-- Pixel Downcasts 
+		   Consider bitdepth conversions, scope for opts 	    
+	II. Upcasts   
+		-- Integral Upcasts 8_to_16, 16_to_32
+		-- Pixel Upcasts 8_to_16, 16_to_24
+		
 2.Memory load/Store
 3.Local Variables
-4.
+4.Control Flow
+  
 
 
